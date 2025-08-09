@@ -129,7 +129,7 @@
 
 <section class="gallery" id="gallery">
   <!-- Replace these with real photos -->
-  <img src="https://i.ibb.co/vxGZVqnw/mari-jpgxqwk-20250325-0001.jpg" alt="mari-jpgxqwk-20250325-0001" border="0">
+  <img src="https://i.postimg.cc/85yQty7W/20250809-160322.jpg" alt="Image">
   <img src="https://i.ibb.co/SD2KpdSG/IMG-20250718-WA0001.jpg" alt="IMG-20250718-WA0001" border="0">
   <img src="https://i.ibb.co/zTrf9F9m/IMG-20250731-WA0000.jpg" alt="IMG-20250731-WA0000" border="0">
 </section>
@@ -149,58 +149,4 @@
 </section>
 
 <section class="notes">
-  <h2>read this bitch</h2>
-  <p>u the sunshine in my darkest days amor 💛”</p>
-  <p>every day with you is a makes me soo fkin happy 💛”</p>
-  <p>espero que tengas un hermoso día 💛”</p>
-</section>
 
-<section class="quiz">
-  <h2>who is my baby</h2>
-  <button onclick="showAnswer()">clickk meeee</button>
-  <div class="quiz-result" id="quiz-result"></div>
-  <a href="https://ibb.co/fLpJQHt" target="_blank" id="hiddenPhotoLink">
-    <img id="hiddenPhoto" src="https://i.ibb.co/hwW0CVH/image-2025-08-09-160522141.png" alt="Mira Photo" border="0" />
-  </a>
-</section>
-
-<h3>Happy 18th Birthday, Mira ❤️ A year ago, we were just two voices and a couple of pixels on Discord… and somehow, you became my favorite person in the whole world. From late night talks to that beautiful little book u made me, you’ve filled my life with love, laughter, and a million reasons to be grateful. Today, mi amor, you officially become an adult but to me, you’ll always be that sweet, funny, and slightly crazy girl who stole my heart without even trying. Feliz cumpleaños, mi Mira. Here to ur dreams ur smile and to us siempre. dont drink alot hoe  </h3>
-
-<footer>
-  Made with 💛 by me for Mira.
-</footer>
-
-<script>
-  // Countdown Timer to August 31, 2025 (her 18th birthday)
-  const countdownEl = document.getElementById('countdown');
-  const birthday = new Date('2025-08-31T00:00:00');
-
-  function updateCountdown() {
-    const now = new Date();
-    const diff = birthday - now;
-    if(diff <= 0) {
-      countdownEl.textContent = "Happy 18th Birthday, Mira! 🎂🎉";
-      clearInterval(timer);
-      return;
-    }
-    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
-    const minutes = Math.floor((diff / (1000 * 60)) % 60);
-    const seconds = Math.floor((diff / 1000) % 60);
-    countdownEl.textContent = `Time left: ${days}d ${hours}h ${minutes}m ${seconds}s 💛`;
-  }
-
-  const timer = setInterval(updateCountdown, 1000);
-  updateCountdown();
-
-  // Show picture on button click
-  function showAnswer() {
-    const quizResult = document.getElementById('quiz-result');
-    quizResult.textContent = ""; // clear text if any
-    const photoLink = document.getElementById('hiddenPhotoLink');
-    photoLink.style.display = 'inline-block'; // show the clickable image
-  }
-</script>
-
-</body>
-</html>
